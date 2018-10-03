@@ -1,5 +1,6 @@
 package services.map;
 
+import org.springframework.stereotype.Service;
 import services.CrudService;
 
 import java.util.HashMap;
@@ -7,6 +8,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+@Service
 public abstract class AbstractMapService<T, ID> implements CrudService<T, ID> {
 
 	protected Map<ID, T> map = new HashMap<>();
